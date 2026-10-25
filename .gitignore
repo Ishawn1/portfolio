@@ -1,0 +1,12 @@
+# Operating System
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local testing and guidance assets
+webapp-testing/
+frontend-design/
+
+# Local IDE configuration
+.vscode/
+.idea/

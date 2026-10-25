@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishawn Mehta — Flutter Developer &amp; Edge AI Systems Engineer</title>
+  <meta name="description" content="Portfolio of Ishawn Mehta. Specializing in Flutter mobile architecture, Edge AI model quantization (INT8/FP16), sub-millisecond on-device inference, and offline IoT systems.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ishawn Mehta — Flutter &amp; Edge AI Systems Engineer">
+  <meta property="og:description" content="Sub-millisecond on-device inference, INT8 quantization, and offline autonomous Flutter architectures.">
+  <meta property="og:url" content="https://github.com/Ishawn1">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ishawn Mehta",
+    "jobTitle": "Flutter & Edge AI Systems Engineer",
+    "url": "https://github.com/Ishawn1",
+    "email": "mailto:ishawn23@protonmail.com",
+    "sameAs": [
+      "https://github.com/Ishawn1",
+      "https://www.linkedin.com/in/ishawn-mehta/"
+    ],
+    "knowsAbout": [
+      "Flutter",
+      "Dart",
+      "Edge AI",
+      "Model Quantization",
+      "TensorFlow Lite",
+      "ONNX Runtime",
+      "ESP32-S3",
+      "Computer Vision"
+    ]
+  }
+  </script>
+
+  <!-- Typography: Newsreader (Editorial Serif) & Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css?v=1.2">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#top" class="brand-monogram" aria-label="Ishawn Mehta Home">
+        <img src="profile.jpg" alt="Ishawn Mehta" class="header-avatar" width="36" height="36" loading="eager" decoding="async">
+        <div class="brand-meta">
+          <span class="brand-name">Ishawn Mehta</span>
+          <span class="brand-role">Flutter &amp; Edge AI</span>
+        </div>
+      </a>
+
+      <div class="nav-cluster">
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#benchmarks" class="nav-link">Quantization Studio</a></li>
+            <li><a href="#specialization" class="nav-link">Specializations</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="status-badge" title="Open to high-impact mobile and edge intelligence roles">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span>Available for Edge AI Architecture</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" role="main">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-editorial-grid">
+        <div class="hero-text-col">
+          <span class="eyebrow">Mobile Systems &amp; On-Device Inference</span>
+          <h1 id="hero-title" class="hero-headline">
+            Engineering real-time, <em>offline intelligence</em> directly at the edge.
+          </h1>
+          <p class="hero-lead">
+            I build high-performance Flutter applications integrated with quantized neural networks (INT8/FP16), sub-millisecond microcontroller inference engines, and resilient offline telemetry systems. Creator of <strong>SmartKheti</strong>—delivering autonomous, zero-cloud edge diagnostics for rural field operations.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <span>Explore Projects</span>
+              <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
+            <a href="https://github.com/Ishawn1" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="GitHub Profile (opens in new tab)">
+              <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ishawn-mehta/" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="LinkedIn Profile (opens in new tab)">
+              <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Column -->
+        <div class="hero-portrait-col">
+          <div class="hero-portrait-card">
+            <div class="portrait-frame">
+              <img src="profile.jpg" alt="Ishawn Mehta — Flutter Developer &amp; Edge AI Systems Engineer" width="644" height="698" class="portrait-img" fetchpriority="high" decoding="async">
+              <div class="portrait-badge">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span>Edge AI • Flutter • ESP32</span>
+              </div>
+            </div>
+            <div class="portrait-caption">
+              <span class="caption-name">Ishawn Mehta</span>
+              <span class="caption-desc">On-device ML &amp; low-latency mobile systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Engineering Metrics Ribbon -->
+        <div class="metrics-ribbon" role="region" aria-label="Engineering Performance Highlights">
+          <div class="metric-cell">
+            <div class="metric-value">0.02 ms</div>
+            <div class="metric-label">ESP32 On-Chip AI</div>
+            <div class="metric-desc">Hand-crafted 3-layer MLP inference time for soil anomaly detection.</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-value">4.1&times;</div>
+            <div class="metric-label">INT8 Quantization</div>
+            <div class="metric-desc">Memory footprint reduction from 14.8MB to 3.7MB with &lt;0.6% mAP delta.</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-value">60+ FPS</div>
+            <div class="metric-label">Mobile NPU Vision</div>
+            <div class="metric-desc">Real-time live crop disease detection on Android via TFLite delegates.</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-value">100%</div>
+            <div class="metric-label">Offline Autonomy</div>
+            <div class="metric-desc">Local Wi-Fi AP telemetry polling with zero external cloud dependencies.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Quantization & Latency Benchmark Studio -->
+    <section id="benchmarks" class="benchmark-section" aria-labelledby="benchmarks-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Interactive Verification</span>
+          <h2 id="benchmarks-title" class="section-title">Edge AI Quantization &amp; Latency Studio</h2>
+          <p>
+            Real-world model compression metrics comparing baseline FP32 against INT8 post-training quantization on target edge hardware. Toggle models and precision to observe latency, memory bandwidth, and accuracy trade-offs.
+          </p>
+        </div>
+
+        <div class="benchmark-card">
+          <div class="benchmark-controls">
+            <div class="control-group">
+              <span class="control-label">Target Architecture</span>
+              <div class="control-options" role="group" aria-label="Select Target Architecture">
+                <button type="button" class="ctrl-btn active" data-bench-model="smartkheti-yolo">
+                  YOLO26n (Mobile Vision)
+                </button>
+                <button type="button" class="ctrl-btn" data-bench-model="esp32-mlp">
+                  ESP32-S3 (Microcontroller MLP)
+                </button>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <span class="control-label">Precision &amp; Quantization</span>
+              <div class="control-options" role="group" aria-label="Select Precision Level">
+                <button type="button" class="ctrl-btn" data-bench-precision="fp32">FP32 (Base)</button>
+                <button type="button" class="ctrl-btn" data-bench-precision="fp16">FP16 (Half)</button>
+                <button type="button" class="ctrl-btn active" data-bench-precision="int8">INT8 (Quantized)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="benchmark-results-grid" aria-live="polite">
+            <div class="bench-metric-box">
+              <div class="bench-metric-title">Model Size</div>
+              <div id="bench-size" class="bench-metric-val">3.7 MB</div>
+              <div class="bench-metric-note">Flash storage allocation</div>
+            </div>
+
+            <div class="bench-metric-box">
+              <div class="bench-metric-title">Inference Latency</div>
+              <div id="bench-latency" class="bench-metric-val">14 ms</div>
+              <div class="bench-metric-note">Per-frame execution time</div>
+            </div>
+
+            <div class="bench-metric-box">
+              <div class="bench-metric-title">Bandwidth Savings</div>
+              <div id="bench-bandwidth" class="bench-metric-val">-75% memory</div>
+              <div class="bench-metric-note">Memory bus saturation</div>
+            </div>
+
+            <div class="bench-metric-box">
+              <div class="bench-metric-title">Accuracy Retention</div>
+              <div id="bench-accuracy" class="bench-metric-val">93.6% mAP</div>
+              <div class="bench-metric-note">COCO/Custom validation</div>
+            </div>
+
+            <div class="bench-metric-box">
+              <div class="bench-metric-title">Throughput Rate</div>
+              <div id="bench-fps" class="bench-metric-val">71.4 FPS</div>
+              <div class="bench-metric-note">Continuous stream rate</div>
+            </div>
+          </div>
+
+          <div class="benchmark-annotation">
+            <strong>Target Execution Delegate:</strong> <span id="bench-target">Hexagon NPU / TFLite Delegate</span><br>
+            <span id="bench-note">INT8 Post-Training Quantization (PTQ) mapped to Hexagon NPU. Sub-15ms inference enables 60 FPS real-time detection with minimal battery drain.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Featured Projects -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Production Systems &amp; Code</span>
+          <h2 id="projects-title" class="section-title">Selected Projects</h2>
+          <p>
+            Field-tested implementations combining Flutter cross-platform frontends with low-latency edge intelligence.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-bar" role="toolbar" aria-label="Project category filter">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All Work</button>
+          <button type="button" class="filter-btn" data-filter="edge-ai" aria-pressed="false">Edge AI &amp; Vision</button>
+          <button type="button" class="filter-btn" data-filter="flutter" aria-pressed="false">Flutter Architecture</button>
+          <button type="button" class="filter-btn" data-filter="embedded" aria-pressed="false">Embedded Firmware</button>
+        </div>
+
+        <div id="filter-status" class="sr-only" aria-live="polite">Showing 3 projects</div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 1: SmartKheti -->
+          <article class="project-card" data-category="edge-ai flutter embedded">
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="tag accent">Edge AI</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">ESP32-S3</span>
+                <span class="tag">YOLO26 INT8</span>
+                <span class="tag">RS485 Modbus</span>
+              </div>
+
+              <h3 class="project-name">SmartKheti — Autonomous Edge-AI Precision Agriculture</h3>
+              
+              <p class="project-lead">
+                An edge-first smart farming ecosystem engineered for small-holder farmers in zero-connectivity rural India. Combines an autonomous ESP32-S3 field unit running a sub-millisecond C++ neural net with an offline Flutter app running four INT8-quantized YOLO26 vision models.
+              </p>
+
+              <div class="project-specs">
+                <div class="spec-item">
+                  <span class="spec-val">0.02 ms</span>
+                  <span class="spec-label">On-Chip Latency</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">4 Models</span>
+                  <span class="spec-label">On-Device TFLite</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">0 kB</span>
+                  <span class="spec-label">Cloud Dependency</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">RS485</span>
+                  <span class="spec-label">Modbus Sensor Bus</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-primary" data-open-dialog="dialog-smartkheti">
+                  <span>Architecture Deep-Dive</span>
+                </button>
+                <a href="https://github.com/Ishawn1/Latent-Protocol" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="View SmartKheti source code on GitHub (opens in new tab)">
+                  <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Architectural Blueprint Widget -->
+            <div class="project-schematic" aria-hidden="true">
+              <svg viewBox="0 0 320 220" width="100%" height="auto" style="display:block;">
+                <rect x="5" y="5" width="310" height="210" fill="#FAF9F5" stroke="#E2DFD4" stroke-width="1"/>
+                
+                <!-- ESP32 Node -->
+                <rect x="20" y="25" width="120" height="65" fill="#FFFFFF" stroke="#141514" stroke-width="1.2"/>
+                <text x="30" y="45" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#141514">ESP32-S3 NODE</text>
+                <text x="30" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#575852">C++ Neural Net (6→16→8→2)</text>
+                <text x="30" y="75" font-family="'JetBrains Mono', monospace" font-size="8" fill="#164E3D">0.02ms Inference</text>
+
+                <!-- RS485 Sensors -->
+                <rect x="20" y="115" width="120" height="45" fill="#F3F1EA" stroke="#E2DFD4" stroke-width="1"/>
+                <text x="30" y="132" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="500" fill="#141514">RS485 Modbus Bus</text>
+                <text x="30" y="147" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">Moisture, Temp &amp; EC Probes</text>
+
+                <!-- Data Path Arrow 1 -->
+                <line x1="80" y1="115" x2="80" y2="90" stroke="#141514" stroke-width="1" stroke-dasharray="2 2"/>
+
+                <!-- Wi-Fi AP Line -->
+                <line x1="140" y1="57" x2="175" y2="57" stroke="#141514" stroke-width="1.2"/>
+                <polyline points="170,53 175,57 170,61" fill="none" stroke="#141514" stroke-width="1.2"/>
+                <text x="144" y="50" font-family="'JetBrains Mono', monospace" font-size="7" fill="#84837B">Wi-Fi AP</text>
+
+                <!-- Flutter Android App -->
+                <rect x="180" y="25" width="120" height="135" fill="#FFFFFF" stroke="#141514" stroke-width="1.2"/>
+                <text x="190" y="45" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#141514">FLUTTER APP</text>
+                <text x="190" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#575852">Offline Telemetry Engine</text>
+                <line x1="190" y1="70" x2="290" y2="70" stroke="#E2DFD4" stroke-width="0.8"/>
+                <text x="190" y="85" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" fill="#164E3D">TFLite Vision Core</text>
+                <text x="190" y="100" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• YOLO26n Disease INT8</text>
+                <text x="190" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• 9-Class Pest YOLO26s</text>
+                <text x="190" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• Phenological 5-Stage</text>
+                <text x="190" y="145" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#84837B">60 FPS Camera Pipeline</text>
+
+                <!-- Ground Truth Footer -->
+                <text x="25" y="195" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#575852">Topology: Direct Peer-to-Peer • Zero Internet Mandate</text>
+              </svg>
+              <span class="schematic-caption">System Architecture: Offline ESP32-S3 + Flutter Android</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: JMC App -->
+          <article class="project-card" data-category="flutter">
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="tag accent">Flutter</span>
+                <span class="tag">Offline Document Caching</span>
+                <span class="tag">Localization (l10n)</span>
+                <span class="tag">Android Storage Access</span>
+              </div>
+
+              <h3 class="project-name">JMC — Municipal Civic Platform &amp; Offline Document Engine</h3>
+              
+              <p class="project-lead">
+                A Flutter application built for Jamnagar Municipal Corporation citizens. Features an offline-first document storage system that downloads and caches civic certificates and tax receipts locally with native viewer handoff, multi-category service filtering, and trilingual support (English, Gujarati, Hindi).
+              </p>
+
+              <div class="project-specs">
+                <div class="spec-item">
+                  <span class="spec-val">3 Langs</span>
+                  <span class="spec-label">Native Localization</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">Offline</span>
+                  <span class="spec-label">Document Caching</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">Android 13+</span>
+                  <span class="spec-label">Scoped Storage</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">GIS Maps</span>
+                  <span class="spec-label">Facility Locator</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-primary" data-open-dialog="dialog-jmc">
+                  <span>Case Study</span>
+                </button>
+                <a href="https://github.com/Ishawn1/jmc" target="_blank" rel="noopener noreferrer" class="btn-secondary" aria-label="View JMC source code on GitHub (opens in new tab)">
+                  <svg class="btn-icon" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- JMC Visual Feature Panel -->
+            <div class="project-schematic" aria-hidden="true">
+              <svg viewBox="0 0 320 220" width="100%" height="auto" style="display:block;">
+                <rect x="5" y="5" width="310" height="210" fill="#FAF9F5" stroke="#E2DFD4" stroke-width="1"/>
+                
+                <rect x="25" y="25" width="270" height="40" fill="#FFFFFF" stroke="#141514" stroke-width="1.2"/>
+                <text x="35" y="45" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#141514">JMC CIVIC ENGINE</text>
+                <text x="35" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#575852">Tax Services • Water Bill • Geo-Facility Mapping</text>
+
+                <!-- Document Download Pipeline -->
+                <rect x="25" y="80" width="125" height="75" fill="#F3F1EA" stroke="#E2DFD4" stroke-width="1"/>
+                <text x="35" y="98" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" fill="#141514">OFFLINE VAULT</text>
+                <text x="35" y="113" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• Scoped Storage I/O</text>
+                <text x="35" y="127" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• Native PDF Intent Handlers</text>
+                <text x="35" y="141" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#164E3D">Zero-Internet Retrieval</text>
+
+                <rect x="170" y="80" width="125" height="75" fill="#F3F1EA" stroke="#E2DFD4" stroke-width="1"/>
+                <text x="180" y="98" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" fill="#141514">LOCALIZATION</text>
+                <text x="180" y="113" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• Gujarati (ગુજરાતી)</text>
+                <text x="180" y="127" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• Hindi (हिन्दी)</text>
+                <text x="180" y="141" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">• English (en-US)</text>
+
+                <text x="25" y="185" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#575852">Security: Granular Android 13+ Storage Permissions</text>
+              </svg>
+              <span class="schematic-caption">System Architecture: Offline Caching &amp; Trilingual Engine</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Edge Quantization & Calibration Pipeline -->
+          <article class="project-card" data-category="edge-ai">
+            <div class="project-details">
+              <div class="project-tags">
+                <span class="tag accent">Model Quantization</span>
+                <span class="tag">Post-Training Quantization</span>
+                <span class="tag">TFLite / ONNX</span>
+                <span class="tag">NPU Acceleration</span>
+              </div>
+
+              <h3 class="project-name">Latent-Quant — Edge Calibration &amp; Benchmark Pipeline</h3>
+              
+              <p class="project-lead">
+                Tooling and calibration pipelines for compressing PyTorch/YOLO vision backbones to run on edge silicon (mobile NPUs, microcontrollers). Benchmarks dynamic range quantization vs full integer INT8 quantization with representative datasets to eliminate precision degradation.
+              </p>
+
+              <div class="project-specs">
+                <div class="spec-item">
+                  <span class="spec-val">75%</span>
+                  <span class="spec-label">VRAM Compression</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">&lt;0.5%</span>
+                  <span class="spec-label">mAP Loss</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">INT8</span>
+                  <span class="spec-label">Integer Arithmetic</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-val">NNAPI/Hexagon</span>
+                  <span class="spec-label">Hardware Delegate</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn-primary" data-open-dialog="dialog-quant">
+                  <span>View Technical Details</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quantization Calibration Visual -->
+            <div class="project-schematic" aria-hidden="true">
+              <svg viewBox="0 0 320 220" width="100%" height="auto" style="display:block;">
+                <rect x="5" y="5" width="310" height="210" fill="#FAF9F5" stroke="#E2DFD4" stroke-width="1"/>
+                
+                <text x="25" y="30" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#141514">TENSOR WEIGHT QUANTIZATION SPECTRUM</text>
+                
+                <!-- FP32 Distribution -->
+                <rect x="25" y="45" width="270" height="25" fill="#F3F1EA" stroke="#E2DFD4" stroke-width="1"/>
+                <text x="35" y="61" font-family="'JetBrains Mono', monospace" font-size="8" fill="#575852">FP32: 32-bit Float (-3.4e38 to 3.4e38) • 14.8 MB</text>
+
+                <!-- Mapping Arrow -->
+                <line x1="160" y1="72" x2="160" y2="88" stroke="#141514" stroke-width="1.2"/>
+                <polyline points="156,84 160,88 164,84" fill="none" stroke="#141514" stroke-width="1.2"/>
+                <text x="168" y="82" font-family="'JetBrains Mono', monospace" font-size="7" fill="#164E3D">KL Divergence Calibration</text>
+
+                <!-- INT8 Quantized Grid -->
+                <rect x="25" y="92" width="270" height="25" fill="#E8EFEA" stroke="#164E3D" stroke-width="1.2"/>
+                <text x="35" y="108" font-family="'JetBrains Mono', monospace" font-size="8" font-weight="600" fill="#164E3D">INT8: Signed Integer [-128, 127] • 3.7 MB (-75%)</text>
+
+                <rect x="25" y="130" width="270" height="50" fill="#FFFFFF" stroke="#E2DFD4" stroke-width="1"/>
+                <text x="35" y="148" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="600" fill="#141514">Optimization Workflow</text>
+                <text x="35" y="162" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" fill="#575852">Representative dataset calibration → Scale factor (S) &amp; Zero point (Z) computation → TensorRT / TFLite engine compilation</text>
+                
+                <text x="25" y="200" font-family="'JetBrains Mono', monospace" font-size="7.5" fill="#84837B">Formula: q = round(r / S) + Z</text>
+              </svg>
+              <span class="schematic-caption">Calibration Diagram: Post-Training Quantization to INT8</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Specializations Matrix -->
+    <section id="specialization" class="skills-section" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Core Engineering Domains</span>
+          <h2 id="skills-title" class="section-title">Technical Specializations</h2>
+          <p>
+            Bridging mobile user experience with bare-metal and edge-silicon execution.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <div class="skill-pillar">
+            <h3 class="pillar-title">Flutter &amp; Mobile Architecture</h3>
+            <ul class="pillar-list">
+              <li class="pillar-item">
+                <span class="item-tech">Cross-Platform Flutter &amp; Dart</span>
+                <span class="item-note">Clean architecture, state management (ChangeNotifier / BLoC)</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Native Platform Channels</span>
+                <span class="item-note">MethodChannel, EventChannel, C++ FFI bindings</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Offline-First Engine</span>
+                <span class="item-note">Local caching, SQLite/Isar, background polling services</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Hardware Storage &amp; Scoped I/O</span>
+                <span class="item-note">Android Storage Access Framework, native file intents</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-pillar">
+            <h3 class="pillar-title">Edge AI &amp; Model Optimization</h3>
+            <ul class="pillar-list">
+              <li class="pillar-item">
+                <span class="item-tech">Post-Training Quantization (PTQ)</span>
+                <span class="item-note">FP32 to INT8 weight folding, calibration with representative data</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">TensorFlow Lite &amp; ONNX Runtime</span>
+                <span class="item-note">GPU delegates, Android NNAPI, Hexagon NPU acceleration</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Computer Vision Models</span>
+                <span class="item-note">YOLO series (YOLOv8, YOLO26n/s), object detection, classification</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Latency &amp; Thermal Profiling</span>
+                <span class="item-note">Android Studio Profiler, TFLite Benchmark Tool, Netron</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-pillar">
+            <h3 class="pillar-title">Embedded &amp; Edge Hardware</h3>
+            <ul class="pillar-list">
+              <li class="pillar-item">
+                <span class="item-tech">ESP32-S3 Firmware (C++)</span>
+                <span class="item-note">Hand-crafted neural network runtime, 0.02ms matrix compute</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Industrial Sensor Buses</span>
+                <span class="item-note">RS485 Modbus RTU, SN-3000 probes (moisture, temp, EC)</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Edge Networking &amp; SoftAP</span>
+                <span class="item-note">Token-authenticated local HTTP endpoints, zero-cloud peer AP</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Hardware Reliability</span>
+                <span class="item-note">Hardware watchdog routines, valve actuation state machines</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-pillar">
+            <h3 class="pillar-title">Systems &amp; Tooling</h3>
+            <ul class="pillar-list">
+              <li class="pillar-item">
+                <span class="item-tech">Build &amp; Compilation</span>
+                <span class="item-note">CMake, PlatformIO, Android Gradle, Git CI</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Model Inspection &amp; Graph Editing</span>
+                <span class="item-note">Netron, ONNX GraphSurgeon, TensorRT</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Localization (l10n)</span>
+                <span class="item-note">Multilingual schema architecture (Gujarati, Hindi, English)</span>
+              </li>
+              <li class="pillar-item">
+                <span class="item-tech">Benchmarking &amp; Testing</span>
+                <span class="item-note">Automated performance validation, test suites</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Inquiries Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-layout">
+          
+          <div class="contact-info">
+            <span class="eyebrow">Collaboration &amp; Opportunities</span>
+            <h2 id="contact-title" class="section-title">Direct Inquiries</h2>
+            <p>
+              I am open to discussions regarding Flutter engineering, on-device Edge AI deployments, model quantization pipelines, and offline-first mobile systems.
+            </p>
+
+            <ul class="contact-methods">
+              <li class="contact-method-item">
+                <span class="method-label">Direct Email</span>
+                <a href="mailto:ishawn23@protonmail.com" class="method-val">ishawn23@protonmail.com</a>
+                <div class="copy-email-box">
+                  <button type="button" id="btn-copy-email" class="btn-copy">
+                    Copy Email Address
+                  </button>
+                  <span id="copy-toast" class="copy-toast" aria-live="polite">✓ Copied to clipboard</span>
+                </div>
+              </li>
+              <li class="contact-method-item">
+                <span class="method-label">GitHub</span>
+                <a href="https://github.com/Ishawn1" target="_blank" rel="noopener noreferrer" class="method-val">github.com/Ishawn1</a>
+              </li>
+              <li class="contact-method-item">
+                <span class="method-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/ishawn-mehta/" target="_blank" rel="noopener noreferrer" class="method-val">linkedin.com/in/ishawn-mehta</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form with Honeypot Bot Trap -->
+          <div class="contact-form-card">
+            <form id="contact-form" novalidate>
+              <!-- Hidden honeypot field for bot deterrence -->
+              <input type="text" name="_verification_code" class="antispam-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name</label>
+                <input type="text" id="sender-name" class="form-input" placeholder="e.g. Elena Rostova" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Email Address</label>
+                <input type="email" id="sender-email" class="form-input" placeholder="name@organization.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Project Scope / Message</label>
+                <textarea id="sender-message" class="form-textarea" placeholder="Describe the mobile architecture or Edge AI challenge you'd like to tackle..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                <span>Send Inquiry</span>
+                <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+
+              <div id="form-status" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-colophon">
+        &copy; 2026 Ishawn Mehta. Crafted with Swiss Editorial typography, semantic HTML5, and vanilla JS. Zero tracking, zero bloat.
+      </div>
+      <ul class="footer-socials">
+        <li><a href="https://github.com/Ishawn1" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ishawn-mehta/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a></li>
+        <li><a href="mailto:ishawn23@protonmail.com" class="footer-link">ProtonMail</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Accessible Native Modals (<dialog>)
+       ======================================================================== -->
+  
+  <!-- SmartKheti Deep-Dive Dialog -->
+  <dialog id="dialog-smartkheti" class="case-dialog" aria-labelledby="dialog-smartkheti-title">
+    <div class="dialog-header">
+      <h3 id="dialog-smartkheti-title" class="dialog-title">SmartKheti: Edge AI Precision Agriculture Architecture</h3>
+      <button type="button" class="dialog-close" aria-label="Close dialog">Close [ESC]</button>
+    </div>
+    <div class="dialog-body">
+      <p>
+        <strong>Problem Space:</strong> Small pomegranate farms in dryland regions of India lack cellular connectivity and cannot support cloud-based computer vision APIs. Latency, cellular data fees, and network drops render centralized cloud architectures unusable.
+      </p>
+
+      <h4>Sub-Millisecond On-Chip Diagnostics (ESP32-S3)</h4>
+      <p>
+        The field unit features an ESP32-S3 N16R8 running a custom, hand-crafted 3-layer Multi-Layer Perceptron (MLP) written in C++ (6 input features &rarr; 16 hidden &rarr; 8 hidden &rarr; 2 outputs). Running directly inside internal SRAM, it calculates crop water stress and inspection risk in <strong>0.02 ms</strong> from live RS485 Modbus soil telemetry and microclimate sensors.
+      </p>
+
+      <h4>Android YOLO26n INT8 Vision Pipeline</h4>
+      <p>
+        The companion Flutter application hosts 4 INT8-quantized TensorFlow Lite vision models executing directly on Android hardware without internet:
+      </p>
+      <ul>
+        <li><strong>Disease Detection:</strong> YOLO26n INT8 detects Alternaria, Fungal Spot, and Bacterial Blight in real time.</li>
+        <li><strong>Pest Detection:</strong> YOLO26s INT8 covers 9 classes including aphids, red spider mites, and whiteflies.</li>
+        <li><strong>Phenological Stage:</strong> 5-class growth stage classifier (bud, flower, fruit, mature).</li>
+      </ul>
+
+      <h4>Offline Wi-Fi Access Point Telemetry</h4>
+      <p>
+        The ESP32-S3 operates as a Wi-Fi Access Point. The Flutter app polls <code>/data</code> with token authentication every 4.5 seconds with a 15-second hardware watchdog and an automated 15-minute notification cooldown persisted across app restarts.
+      </p>
+
+      <div>
+        <a href="https://github.com/Ishawn1/Latent-Protocol" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          View SmartKheti Source on GitHub
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JMC Deep-Dive Dialog -->
+  <dialog id="dialog-jmc" class="case-dialog" aria-labelledby="dialog-jmc-title">
+    <div class="dialog-header">
+      <h3 id="dialog-jmc-title" class="dialog-title">JMC Civic Platform: Architecture &amp; Offline Storage Engine</h3>
+      <button type="button" class="dialog-close" aria-label="Close dialog">Close [ESC]</button>
+    </div>
+    <div class="dialog-body">
+      <p>
+        <strong>Overview:</strong> A public utility Flutter application built for citizens of Jamnagar Municipal Corporation (Gujarat, India).
+      </p>
+
+      <h4>Resilient Offline Downloads &amp; Document Management</h4>
+      <p>
+        Public utility users often need tax receipts and municipal certificates in remote or low-signal administrative offices. JMC implements an offline file caching pipeline using Android's Scoped Storage (adapted for Android 13+ granular permissions) that enables instant offline file access and seamless hand-off to native device PDF/image viewers.
+      </p>
+
+      <h4>Tri-Lingual Localization Architecture</h4>
+      <p>
+        Designed from day one with Flutter's localization framework (<code>l10n</code>) supporting English, Gujarati (ગુજરાતી), and Hindi (हिन्दी), dynamically switching across municipal categories and citizen utility feeds.
+      </p>
+
+      <div>
+        <a href="https://github.com/Ishawn1/jmc" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          View JMC Source on GitHub
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Quantization Breakdown Dialog -->
+  <dialog id="dialog-quant" class="case-dialog" aria-labelledby="dialog-quant-title">
+    <div class="dialog-header">
+      <h3 id="dialog-quant-title" class="dialog-title">Model Quantization &amp; Calibration Methodologies</h3>
+      <button type="button" class="dialog-close" aria-label="Close dialog">Close [ESC]</button>
+    </div>
+    <div class="dialog-body">
+      <p>
+        Edge deployment demands squeezing neural networks into strict memory and thermal envelopes without degrading inference accuracy.
+      </p>
+
+      <h4>Post-Training Quantization (PTQ) vs QAT</h4>
+      <p>
+        For vision models like YOLO26n, standard dynamic range quantization still incurs floating point overhead during activations. By collecting representative calibration tensors across real field lighting conditions and using KL divergence calibration, we quantize both weights and activations to signed 8-bit integers (INT8).
+      </p>
+
+      <pre><code>// INT8 Quantization Mapping
+q = clamp(round(r / scale) + zero_point, -128, 127)
+
+// Execution Benefits on Edge Silicon:
+- 4x reduction in memory footprint (14.8MB -> 3.7MB)
+- 4.5x speedup on mobile NPU / Hexagon DSP
+- Drastic reduction in thermal throttling during continuous live scanning</code></pre>
+
+      <h4>Hardware Delegate Mapping</h4>
+      <p>
+        Ensuring operators (e.g., Concat, Conv2D, LeakyReLU) map directly to Android NNAPI and GPU delegates without CPU fallback kernels, which are the primary culprits behind micro-stutter in live video feeds.
+      </p>
+    </div>
+  </dialog>
+
+  <script src="app.js?v=1.2"></script>
+</body>
+</html>
