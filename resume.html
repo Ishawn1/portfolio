@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishawn Mehta — Resume</title>
+  <meta name="description" content="Resume of Ishawn Mehta. Flutter Developer, Edge AI & Systems Engineer. ATS and print-ready single page resume.">
+
+  <!-- Typography: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Document page bounds (0.5in standard printable margin) */
+    @page {
+      margin: 0.5in;
+      size: letter;
+    }
+
+    :root {
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', Consolas, monospace;
+      --ink-primary: #111827;
+      --ink-secondary: #374151;
+      --ink-muted: #6B7280;
+      --border-rule: #E5E7EB;
+      --accent: #164E3D;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 9.5pt;
+      line-height: 1.35;
+      color: var(--ink-primary);
+      background-color: #F3F4F6;
+      -webkit-font-smoothing: antialiased;
+      padding: 2rem 1rem;
+    }
+
+    /* Screen Canvas */
+    .resume-sheet {
+      max-width: 8.5in;
+      min-height: 11in;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 0.5in 0.55in;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    /* Floating Action Controls */
+    .action-bar {
+      position: fixed;
+      top: 1.25rem;
+      right: 1.25rem;
+      z-index: 100;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .btn-action {
+      background-color: var(--ink-primary);
+      color: #FFFFFF;
+      border: 1px solid var(--ink-primary);
+      padding: 0.55rem 1rem;
+      font-size: 9pt;
+      font-weight: 600;
+      font-family: var(--font-body);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-radius: 4px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: background-color 150ms ease;
+    }
+
+    .btn-action:hover {
+      background-color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .btn-back {
+      background-color: #FFFFFF;
+      color: var(--ink-primary);
+      border: 1px solid #D1D5DB;
+    }
+
+    .btn-back:hover {
+      background-color: #F9FAFB;
+      border-color: #9CA3AF;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1.5px solid var(--ink-primary);
+      padding-bottom: 0.45rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    h1.candidate-name {
+      font-size: 18.5pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink-primary);
+      line-height: 1.1;
+    }
+
+    .candidate-title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: var(--accent);
+      margin-top: 0.12rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.85rem;
+      list-style: none;
+      margin-top: 0.35rem;
+      font-size: 8.8pt;
+      color: var(--ink-secondary);
+    }
+
+    .contact-links a {
+      color: var(--ink-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-sep {
+      color: #9CA3AF;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 0.55rem;
+    }
+
+    h2.section-heading {
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-primary);
+      border-bottom: 1px solid var(--border-rule);
+      padding-bottom: 0.15rem;
+      margin-bottom: 0.35rem;
+    }
+
+    /* Entry Units */
+    .entry {
+      margin-bottom: 0.4rem;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.1rem;
+    }
+
+    .entry-title {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: var(--ink-primary);
+    }
+
+    .entry-subtitle {
+      font-size: 8.8pt;
+      font-weight: 500;
+      color: var(--ink-secondary);
+    }
+
+    .entry-date {
+      font-size: 8.8pt;
+      font-weight: 500;
+      color: var(--ink-muted);
+      text-align: right;
+    }
+
+    .entry-tech {
+      font-family: var(--font-mono);
+      font-size: 8.2pt;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.18rem;
+    }
+
+    /* Bullet List */
+    ul.bullet-list {
+      list-style: disc;
+      padding-left: 1.15rem;
+      color: var(--ink-secondary);
+    }
+
+    ul.bullet-list li {
+      margin-bottom: 0.18rem;
+      line-height: 1.32;
+    }
+
+    ul.bullet-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    ul.bullet-list strong {
+      color: var(--ink-primary);
+      font-weight: 600;
+    }
+
+    /* Technical Skills Table (semantic for ATS extractors) */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 8.8pt;
+    }
+
+    .skills-table tr {
+      border-bottom: 1px solid #F3F4F6;
+    }
+
+    .skills-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .skills-label {
+      font-weight: 700;
+      color: var(--ink-primary);
+      width: 25%;
+      padding: 0.15rem 0;
+      vertical-align: top;
+    }
+
+    .skills-content {
+      color: var(--ink-secondary);
+      padding: 0.15rem 0;
+    }
+
+    /* Honors & Awards List */
+    .awards-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.25rem 1.2rem;
+      font-size: 8.8pt;
+    }
+
+    .award-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px dashed #E5E7EB;
+      padding-bottom: 0.12rem;
+      overflow-wrap: break-word;
+    }
+
+    .award-name {
+      font-weight: 600;
+      color: var(--ink-primary);
+      padding-right: 0.5rem;
+    }
+
+    .award-org {
+      color: var(--ink-muted);
+      font-size: 8.2pt;
+      text-align: right;
+    }
+
+    /* Print Optimization (Strict 1-Page Guarantee) */
+    @media print {
+      html, body {
+        background: #FFFFFF !important;
+        color: #111827 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+      }
+
+      * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+
+      .no-print, .action-bar {
+        display: none !important;
+      }
+
+      .resume-sheet {
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+      }
+
+      a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      h1.candidate-name, h2.section-heading, .entry-title, .skills-label, strong {
+        color: #000000 !important;
+      }
+
+      .candidate-title, .entry-tech {
+        color: #164E3D !important;
+      }
+
+      /* Atomic non-fragmentation: avoids orphan headers or split bullet items without breaking the whole page */
+      .entry, .award-card, tr, li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      section {
+        break-inside: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Print Controls (hidden on print) -->
+  <div class="action-bar no-print">
+    <a href="index.html" class="btn-action btn-back">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+      </svg>
+      <span>Back to Portfolio</span>
+    </a>
+    <button type="button" class="btn-action" onclick="window.print()">
+      <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+      </svg>
+      <span>Print / Save as PDF</span>
+    </button>
+  </div>
+
+  <main class="resume-sheet">
+    
+    <!-- Candidate Header -->
+    <header>
+      <div class="header-top">
+        <div>
+          <h1 class="candidate-name">Ishawn Mehta</h1>
+          <div class="candidate-title">Flutter Developer &amp; Edge AI Systems Engineer</div>
+        </div>
+      </div>
+
+      <ul class="contact-links" aria-label="Candidate Contact Information">
+        <li><a href="https://ishawn1.github.io/portfolio/">ishawn1.github.io/portfolio</a></li>
+        <li class="contact-sep" aria-hidden="true">•</li>
+        <li><a href="mailto:ishawn23@protonmail.com">ishawn23@protonmail.com</a></li>
+        <li class="contact-sep" aria-hidden="true">•</li>
+        <li><a href="https://github.com/Ishawn1">github.com/Ishawn1</a></li>
+        <li class="contact-sep" aria-hidden="true">•</li>
+        <li><a href="https://www.linkedin.com/in/ishawn-mehta/">linkedin.com/in/ishawn-mehta</a></li>
+      </ul>
+    </header>
+
+    <!-- Technical Skills -->
+    <section aria-labelledby="sec-skills">
+      <h2 id="sec-skills" class="section-heading">Technical Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-label">Languages</td>
+          <td class="skills-content">Dart, C++, Python, JavaScript (ES6+), SQL, HTML5/CSS3</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Mobile &amp; Frameworks</td>
+          <td class="skills-content">Flutter, Platform Channels (C++ FFI / MethodChannel), Isolate Multithreading, Android Scoped Storage, l10n</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Edge AI &amp; Quantization</td>
+          <td class="skills-content">TensorFlow Lite, ONNX Runtime, INT8 Post-Training Quantization (PTQ), YOLO26/v8, KL Divergence Calibration, NNAPI</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Embedded &amp; Systems</td>
+          <td class="skills-content">ESP32-S3 (Xtensa LX7), Embedded C++, RS485 Modbus RTU, SoftAP Networking, Hardware Watchdogs, Sensor Fusion</td>
+        </tr>
+        <tr>
+          <td class="skills-label">Infrastructure &amp; Tools</td>
+          <td class="skills-content">Netron, Android Studio Profiler, CMake, Git, Linux, TFLite Benchmark Tool, REST / WebSocket APIs</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Featured Projects -->
+    <section aria-labelledby="sec-projects">
+      <h2 id="sec-projects" class="section-heading">Featured Engineering Projects</h2>
+
+      <!-- SmartKheti -->
+      <article class="entry">
+        <div class="entry-header">
+          <span class="entry-title">SmartKheti — Autonomous Edge-AI Precision Agriculture System</span>
+          <span class="entry-date">SSIP Funded (INR 11,000)</span>
+        </div>
+        <div class="entry-tech">Flutter, Dart, C++, TensorFlow Lite, INT8 YOLO26, ESP32-S3, RS485 Modbus | github.com/Ishawn1/Latent-Protocol</div>
+        <ul class="bullet-list">
+          <li>Architected a zero-cloud precision agriculture ecosystem combining an <strong>ESP32-S3 microcontroller field unit</strong> with an offline Android Flutter companion app engineered for rural low-connectivity drylands.</li>
+          <li>Engineered a hand-crafted 3-layer neural network (6&rarr;16&rarr;8&rarr;2) in native C++ executing inside ESP32 SRAM, achieving <strong>0.02 ms on-chip inference latency</strong> for live soil stress and anomaly risk detection.</li>
+          <li>Quantized and deployed 4 on-device YOLO vision models (INT8) via TFLite delegates, delivering <strong>60+ FPS live crop disease detection</strong> with a <strong>4.1&times; memory reduction</strong> (14.8MB to 3.7MB) and &lt;0.6% mAP degradation.</li>
+          <li>Implemented peer-to-peer Wi-Fi SoftAP telemetry polling with token authentication, a 15-second hardware watchdog, and a persistent 15-minute anti-spam notification cooldown engine.</li>
+        </ul>
+      </article>
+
+      <!-- JMC Mobile -->
+      <article class="entry">
+        <div class="entry-header">
+          <span class="entry-title">JMC Mobile — Municipal Civic Platform &amp; Offline Document Engine</span>
+          <span class="entry-date">Production Utility</span>
+        </div>
+        <div class="entry-tech">Flutter, Dart, Android Storage Access Framework, l10n Localization | github.com/Ishawn1/jmc</div>
+        <ul class="bullet-list">
+          <li>Engineered a cross-platform citizen utility application for Jamnagar Municipal Corporation providing civic tax services, GIS municipal facility locator, and utility tracking.</li>
+          <li>Architected an offline-first document caching pipeline using Android Scoped Storage (Android 13+ compliant) with native PDF intent hand-offs for zero-connectivity administrative environments.</li>
+          <li>Constructed a tri-lingual localization architecture supporting <strong>Gujarati, Hindi, and English</strong> across dynamic utility feeds.</li>
+        </ul>
+      </article>
+
+      <!-- Latent-Quant -->
+      <article class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Latent-Quant — Edge Model Optimization &amp; Calibration Toolchain</span>
+          <span class="entry-date">Open-Source Pipeline</span>
+        </div>
+        <div class="entry-tech">Python, PyTorch, ONNX, TFLite Converter, Netron, NNAPI / Hexagon Delegates</div>
+        <ul class="bullet-list">
+          <li>Constructed an automated Post-Training Quantization (PTQ) pipeline converting FP32 computer vision models to signed INT8 tensors using representative field dataset calibration.</li>
+          <li>Benchmarked memory footprint and per-frame latency across CPU, GPU, and NPU delegates, validating a <strong>75% VRAM compression ratio</strong> while preserving model bounding box confidence.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Hackathons & Awards -->
+    <section aria-labelledby="sec-awards">
+      <h2 id="sec-awards" class="section-heading">Honors &amp; Hackathon Achievements</h2>
+      <div class="awards-grid">
+        <div class="award-card">
+          <span class="award-name">SSIP Grant (INR 11,000) — SmartKheti</span>
+          <span class="award-org">Student Startup &amp; Innovation Policy</span>
+        </div>
+        <div class="award-card">
+          <span class="award-name">AIT Hackathon Finalist</span>
+          <span class="award-org">Competitive Engineering Hackathon</span>
+        </div>
+        <div class="award-card">
+          <span class="award-name">DAU IEEE x Prama Tic-Tac-Toe Hackathon</span>
+          <span class="award-org">Turn-Based Algorithmic Systems</span>
+        </div>
+        <div class="award-card">
+          <span class="award-name">ETHGlobal Hackathon Builder</span>
+          <span class="award-org">Mobile, DePIN &amp; Edge Systems</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section aria-labelledby="sec-experience">
+      <h2 id="sec-experience" class="section-heading">Experience</h2>
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">Welocalize</span>
+            <span class="entry-subtitle">— Freelance Search Evaluation Analyst &amp; SEO</span>
+          </div>
+          <span class="entry-date">April 2025 &ndash; July 2025</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Audited search engine query algorithms, relevance scoring, and content index quality under strict operational SLAs.</li>
+          <li>Analyzed semantic query intent, content accuracy, and entity verification to refine algorithmic ranking precision across multilingual datasets.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education -->
+    <section aria-labelledby="sec-education">
+      <h2 id="sec-education" class="section-heading">Education</h2>
+      <article class="entry">
+        <div class="entry-header">
+          <div>
+            <span class="entry-title">GLS University</span>
+            <span class="entry-subtitle">— Bachelor of Technology (B.Tech) in Computer Science &amp; Engineering</span>
+          </div>
+          <span class="entry-date">2024 &ndash; Expected May 2028</span>
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+</body>
+</html>

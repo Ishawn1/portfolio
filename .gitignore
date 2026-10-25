@@ -10,3 +10,6 @@ frontend-design/
 # Local IDE configuration
 .vscode/
 .idea/
+
+# Raw uploads
+WhatsApp Image*.jpeg
